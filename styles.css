@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #143C3D;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #000;
+}
+
+.student-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.student-photo {
+    background-color: #0D2226;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.lab-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.lab-buttons button {
+    background-color: #143C3D;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    width: 150px;
+    color: whitesmoke;
+}
+
+.sidebar {
+    width: 20%;
+    float: left;
+}
+
+.sidebar button {
+    display: block;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.main-content {
+    width: 75%;
+    float: right;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.main-content h3 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .student-info {
+        flex-direction: column;
+    }
+
+    .lab-buttons {
+        flex-direction: column;
+    }
+
+    .sidebar, .main-content {
+        width: 100%;
+        float: none;
+    }
+}
