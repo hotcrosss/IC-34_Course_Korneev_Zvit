@@ -5,92 +5,150 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #143C3D;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh; /* Додає мінімальну висоту */
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    min-height: 100vh; /* Гарантує, що фон буде на всю висоту сторінки */
 }
 
 h1, h2 {
     text-align: center;
-    color: #000;
+    margin-bottom: 20px;
+    color: #333;
 }
-a{
+
+a {
     text-decoration: none;
-    color: white;
+    color: #eeeeee;
 }
+
 .student-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.student-info span {
+    font-size: 18px;
 }
 
 .student-photo {
-    background-color: #0D2226;
-    border: 1px solid #ccc;
-    padding: 10px;
-    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
 }
 
 .lab-buttons {
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
+    justify-content: space-between;
+    gap: 10px; /* Простір між кнопками */
+    flex-wrap: nowrap; /* Забороняємо перенесення кнопок на новий ряд */
+    padding: 10px 0; /* Додаємо відступ зверху і знизу для кнопок */
+    overflow-x: auto; /* Додає можливість прокручування, якщо кнопки не вміщаються */
 }
 
 .lab-buttons button {
-    background-color: #143C3D;
-    border: 1px solid #ccc;
-    padding: 10px;
+    background-color: #1a73e8;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
     cursor: pointer;
-    width: 150px;
-    color: whitesmoke;
+    transition: background-color 0.3s;
+    min-width: 150px; /* Мінімальна ширина кнопок */
+    text-align: center;
+    flex-shrink: 0; /* Забороняє кнопкам зменшуватися */
+}
+
+.lab-buttons button:hover {
+    background-color: #155dbb;
 }
 
 .sidebar {
-    width: 20%;
+    width: 25%;
     float: left;
+    margin-top: 40px; 
+    padding: 10px; 
+    background-color: #fff;
+    border-radius: 8px;
 }
 
 .sidebar button {
     display: block;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    padding: 10px;
+    background-color: #414142;
+    border: none;
+    padding: 12px;
     margin-bottom: 10px;
+    border-radius: 8px;
     cursor: pointer;
-    width: 100%;
-    text-align: left;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-align: left; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.sidebar button:hover {
+    background-color: #d4d4d4; 
 }
 
 .main-content {
-    width: 75%;
+    margin-top: 50px;
+    width: 70%;
     float: right;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .main-content h3 {
     text-align: center;
+    margin-bottom: 20px;
+    color: #555;
 }
 
 @media (max-width: 768px) {
     .student-info {
         flex-direction: column;
+        text-align: center;
     }
 
     .lab-buttons {
         flex-direction: column;
+        gap: 10px;
     }
 
     .sidebar, .main-content {
         width: 100%;
         float: none;
+        margin-right: 0;
     }
+}
+.link-main{
+    color: #ececf3;
+    border-radius: 5px;
+    background-color: #686666;
+    padding: 5px 5px 5px 5px;
+}
+.li1{
+    margin-bottom: 10px;
 }
