@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тема. Мета. Місце розсташування лабораторної роботи 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            text-align: left;
+        }
+        ul ul{
+            list-style-type: circle;
+        }
+        ul ul ul{
+            list-style-type: square;
+        }
+        ul ul ul ul{
+            list-style-type: circle;
+        }
+        ul li {
+            margin-bottom: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: #eeeeee;
+            background-color: #333;
+            padding: 5px;
+            border-radius: 5px;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<h1>Структура документа</h1>
+        <h2>1. Документні метадані</h2>
+<ul>
+    <li>Тип документа: <code>&lt;!DOCTYPE html&gt;</code></li>
+    <li>Тег <code>&lt;html lang="en"&gt;</code></li>
+    <li>Тег <code>&lt;head&gt;</code>:
+        <ul>
+            <li><code>&lt;meta charset="UTF-8"&gt;</code> для кодування символів</li>
+            <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> для масштабування сторінки</li>
+            <li>Тег <code>&lt;title&gt;</code> з назвою "Document"</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>2. Тіло документа</h2>
+<ul>
+    <li>Тег <code>&lt;body&gt;</code> містить основні елементи сторінки:</li>
+    <li><h3>Заголовок (header)</h3>
+        <ul>
+            <li>Тег <code>&lt;header&gt;</code></li>
+            <li>Тег <code>&lt;nav&gt;</code> для навігаційного меню:
+                <ul>
+                    <li><code>&lt;ul&gt;</code> — список</li>
+                    <li><code>&lt;li&gt;</code> — пункт меню: "Про нас", "Курси", "Контакти"</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><h3>Основний контент (main)</h3>
+        <ul>
+            <li>Тег <code>&lt;main&gt;</code> містить:
+                <ul>
+                    <li><code>&lt;h1&gt;</code> — "Лабораторна робота 1"</li>
+                    <li><code>&lt;h2&gt;</code> — "Корнєєв Михайло"</li>
+                    <li><code>&lt;img src="img/images.jfif" alt="#"&gt;</code> — зображення</li>
+                    <li>Таблиця <code>&lt;table&gt;</code> з інформацією про курси:
+                        <ul>
+                            <li><code>&lt;th&gt;</code> — заголовки стовпців: "Назва курсу", "Термін", "Ціна"</li>
+                            <li><code>&lt;td&gt;</code> — дані курсів: HTML, CSS, JavaScript тощо</li>
+                        </ul>
+                    </li>
+                    <li><code>&lt;h2&gt;</code> — "Roadmap CSS"</li>
+                    <li>Невпорядкований список <code>&lt;ul&gt;</code>:
+                        <ul>
+                            <li>Learn the basics</li>
+                            <li>Making Layouts</li>
+                            <li>Responsive design</li>
+                        </ul>
+                    </li>
+                    <li><code>&lt;h2&gt;</code> — "Roadmap JavaScript"</li>
+                    <li>Упорядкований список <code>&lt;ol&gt;</code>:
+                        <ul>
+                            <li>Learn the basics</li>
+                            <li>Learn DOM Manipulation</li>
+                            <li>Fetch API</li>
+                        </ul>
+                    </li>
+                    <li>Форма <code>&lt;form&gt;</code> з полями введення:
+                        <ul>
+                            <li>Поле тексту: <code>&lt;input type="text" name="firstname"&gt;</code> для імені</li>
+                            <li>Поле тексту: <code>&lt;input type="text" name="lastname"&gt;</code> для прізвища</li>
+                            <li>Кнопка: <code>&lt;input type="submit"&gt;</code> для надсилання форми</li>
+                        </ul>
+                    </li>
+                    <li><code>&lt;h1&gt;</code> — "Посилання"</li>
+                    <li>Посилання: <code>&lt;a href="zvit.html"&gt;</code> на звіт</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><h3>Футер (footer)</h3>
+        <ul>
+            <li>Тег <code>&lt;footer&gt;</code> з невпорядкованим списком:
+                <ul>
+                    <li>Інстаграм</li>
+                    <li>Телеграм</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+        
+    </div>
+</body>
+</html>

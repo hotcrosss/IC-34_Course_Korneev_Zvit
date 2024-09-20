@@ -20,6 +20,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     min-height: 100vh; /* Гарантує, що фон буде на всю висоту сторінки */
+    
 }
 
 h1, h2 {
@@ -52,7 +53,6 @@ a {
     background-color: #fff;
     border: 2px solid #ddd;
     border-radius: 8px;
-    padding: 5px;
 }
 
 .lab-buttons {
@@ -118,6 +118,7 @@ a {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    height: 52vh;
 }
 
 .main-content h3 {
