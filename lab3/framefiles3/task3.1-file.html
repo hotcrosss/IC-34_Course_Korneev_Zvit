@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,21 +47,101 @@
         ul li {
             margin-bottom: 15px;
         }
+
         a {
             text-decoration: none;
             color: #eeeeee;
             background-color: #333;
             padding: 5px;
             border-radius: 5px;
-            
+        }
+
+        pre {
+            text-align: left;
+            margin-left: 0;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            white-space: pre-wrap;
+            word-wrap: break-word;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
 
         <h1>Завдання №1</h1>
+        <h2>Загальний вигляд сторінки</h2>
         <img src="../../lab1/img/main_photo.png" alt="main" style="width: 500px; height: 400px;">
+        <h2>Вигляд макету</h2>
+        <img src="../../lab1/img/maket.png" alt="maket" style="width: 500px; height: 400px;">
+        <h2>Код макету</h2>
+        <pre>
+            <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang=&quot;en&quot;&gt;
+              &lt;head&gt;
+                &lt;meta charset=&quot;UTF-8&quot;&gt;
+                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                &lt;title&gt;Site Layout&lt;/title&gt;
+                &lt;style&gt;
+                  * { box-sizing: border-box; }
+                  body { margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
+                  header { background-color: cyan; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+                  .logo { width: 100px; height: 100px; background-color: white; border: 1px solid black; display: flex; justify-content: center; align-items: center; font-size: 24px; font-weight: bold; }
+                  .nav-links { display: flex; gap: 20px; justify-content: center; flex-grow: 1; }
+                  .nav-links button { width: 100px; height: 50px; background-color: gray; border: none; border-radius: 15px; cursor: pointer; }
+                  .nav-extra { display: flex; gap: 10px; width: 100px; height: 50px; border-radius: 15px; margin-right: 50px; }
+                  main { flex: 1; background-color: teal; display: flex; flex-direction: column; justify-content: space-between; }
+                  .section-full-screen { flex-grow: 1; background-color: darkcyan; display: flex; justify-content: center; align-items: center; text-align: center; padding: 20px; }
+                  .section-full-screen h1 { font-size: 40px; color: white; }
+                  .container-opys { background-color: lightgray; padding: 20px; text-align: center; }
+                  footer { background-color: yellow; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+                  .footer-logo { width: 100px; height: 100px; background-color: white; border: 1px solid black; display: flex; justify-content: center; align-items: center; font-size: 24px; font-weight: bold; }
+                  .footer-nav { width: 200px; height: 200px; background-color: white; border: 1px solid black; display: flex; justify-content: center; align-items: center; font-size: 20px; font-weight: bold; }
+                  h1, p { margin: 0; }
+                  @media (max-width: 768px) { .section-full-screen h1 { font-size: 30px; } }
+                  @media (max-width: 480px) { .section-full-screen h1 { font-size: 20px; } }
+                &lt;/style&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;header&gt;
+                  &lt;div class=&quot;logo&quot;&gt;Logo&lt;/div&gt;
+                  &lt;nav class=&quot;nav-links&quot;&gt;
+                    &lt;button&gt;BUTTON&lt;/button&gt;
+                    &lt;button&gt;BUTTON&lt;/button&gt;
+                    &lt;button&gt;BUTTON&lt;/button&gt;
+                    &lt;button&gt;BUTTON&lt;/button&gt;
+                    &lt;button&gt;BUTTON&lt;/button&gt;
+                  &lt;/nav&gt;
+                  &lt;div class=&quot;nav-extra&quot;&gt;
+                    &lt;button&gt;BUTTON&lt;/button&gt;
+                    &lt;button&gt;BUTTON&lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/header&gt;
+                &lt;main&gt;
+                  &lt;section class=&quot;section-full-screen&quot;&gt;
+                    &lt;h1&gt;MAIN CONTENT&lt;/h1&gt;
+                  &lt;/section&gt;
+                  &lt;section class=&quot;container-opys&quot;&gt;
+                    ОПИС: Підтримка менторів | Більше 1000+ студентів | 20% теорії, 80% практики
+                  &lt;/section&gt;
+                &lt;/main&gt;
+                &lt;footer&gt;
+                  &lt;div class=&quot;footer-logo&quot;&gt;Logo&lt;/div&gt;
+                  &lt;div class=&quot;footer-nav&quot;&gt;Навігація&lt;/div&gt;
+                &lt;/footer&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;
+            </code>
+        </pre>
+
     </div>
 </body>
+
 </html>
