@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Посилання</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: #eeeeee;
+            background-color: #333;
+            padding: 5px;
+            border-radius: 5px;
+            
+        }
+        pre {
+            text-align: left;
+            margin-left: 0;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Desktop</h1>
+        <h2>Загальний вигляд</h2>
+        <img src="../../lab1/img/desktop_photo4.png" alt="desktop_photo4" width="500px" height="400px">
+        <h2>HTML Код</h2>
+        <pre>
+            <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            
+            &lt;head&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+              &lt;link rel="stylesheet" href="styles.css"&gt;
+              &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+              &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"&gt;
+              &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"&gt;
+              &lt;title&gt;CODEMASTER&lt;/title&gt;
+            &lt;/head&gt;
+            
+            &lt;body&gt;
+              &lt;header class="header"&gt;
+                &lt;div class="logo"&gt;
+                  &lt;span&gt;CODEMASTER ACADEMY&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;nav class="nav-links"&gt;
+                  &lt;a href="#about"&gt;Про нас&lt;/a&gt;
+                  &lt;div class="dropdown"&gt;
+                    &lt;a href="#courses" id="dropdownToggle"&gt;Курси&lt;/a&gt;
+                    &lt;div class="dropdown-menu" id="dropdownMenu"&gt;
+                      &lt;a href="#"&gt;UI/UX designer&lt;/a&gt;
+                      &lt;a href="#"&gt;Data analyst&lt;/a&gt;
+                      &lt;a href="#"&gt;QA engineer&lt;/a&gt;
+                      &lt;a href="#"&gt;Python developer&lt;/a&gt;
+                      &lt;a href="#"&gt;Digital marketer&lt;/a&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;a href="#projects"&gt;Наші проекти&lt;/a&gt;
+                  &lt;a href="#contacts"&gt;Контакти&lt;/a&gt;
+                  &lt;a href="#reviews"&gt;Відгуки&lt;/a&gt;
+                &lt;/nav&gt;
+                &lt;div class="buttons"&gt;
+                  &lt;button class="btn"&gt;Увійти&lt;/button&gt;
+                  &lt;button class="btn btn-primary"&gt;Зареєструватись&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/header&gt;
+            
+              &lt;main&gt;
+                &lt;section class="section-full-screen"&gt;
+                    &lt;div class="container-main"&gt;
+                        &lt;h1 id="Base_text"&gt;Онлайн курси програмування та ІТ професій&lt;/h1&gt;
+                        &lt;a href="#" id="Info_button"&gt;Дізнатися більше&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class="container-opys"&gt;
+                        &lt;p&gt;Підтримка менторів&lt;/p&gt;
+                        &lt;p&gt;Більше 1000+ працевлаштованих студентів&lt;/p&gt;
+                        &lt;p&gt;20% &lt;b&gt;теорії&lt;/b&gt; 80% &lt;i&gt;практики&lt;/i&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            
+                &lt;section class="section-full-screen-empty"&gt;
+                    &lt;!-- Порожня секція, яка займає весь екран --&gt;
+                &lt;/section&gt;
+              &lt;/main&gt;
+              &lt;footer&gt;
+                &lt;div class="footer-container"&gt;
+                  &lt;div class="footer-logo"&gt;
+                    &lt;img src="img/LogoV3.png" alt="Site Logo"&gt;
+                  &lt;/div&gt;
+                  &lt;div class="footer-links"&gt;
+                    &lt;h1 style="text-align: center;" class="hh"&gt;Contact us&lt;/h1&gt;
+                    &lt;div&gt;
+                      &lt;ul class="foot-ul"&gt;
+                        &lt;li&gt;&lt;a href="https://www.instagram.com/_m.i.h.a.n.y.a_?igsh=ZmtmYWxiejFqN2Ru" target="_blank"&gt;Instagram &lt;i class="fa fa-instagram" style="font-size:24px"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="https://t.me/hotcross18" target="_blank"&gt;Telegram &lt;i class="fa fa-telegram" style="font-size:24px"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="https://www.facebook.com/profile.php?id=100012626431922" target="_blank"&gt;Facebook &lt;i class="fa fa-facebook-f" style="font-size:24px"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="https://github.com/hotcrosss" target="_blank"&gt;Github &lt;i class="fa fa-github" style="font-size:24px"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/footer&gt;
+              &lt;script src="script.js"&gt;&lt;/script&gt;
+            &lt;/body&gt;
+            
+            &lt;/html&gt;
+            </code>
+            </pre>
+            
+        <h2>CSS код</h2>
+        <pre>
+            <code>
+            /* Основні налаштування */
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                margin: 0;
+                background-color: #37383C;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+            
+            main {
+                flex-grow: 1;
+            }
+            
+            /* Перша секція, яка займає весь екран */
+            .section-full-screen {
+                display: flex;
+                flex-direction: column;
+                justify-content: center; /* Вирівнювання по вертикалі */
+                align-items: center; /* Вирівнювання по горизонталі */
+                height: 100vh;
+                background: linear-gradient(90deg, rgba(158,79,210,1) 12%, rgba(29,109,253,1) 62%, rgba(69,252,133,1) 100%);
+                text-align: center;
+            }
+            
+            /* Основний контейнер для тексту і кнопки */
+            .container-main &gt; h1 {
+                font-size: 60px;
+                font-family: sans-serif;
+                margin-bottom: 40px;
+            }
+            
+            #Info_button {
+                display: inline-block;
+                margin: 20px auto;
+                text-decoration: none;
+                background-color: orangered;
+                padding: 15px 20px;
+                border-radius: 25px;
+                color: white;
+            }
+            
+            /* Блок опису (підтримка менторів та інше) */
+            .container-opys {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                flex-wrap: wrap;
+                margin-top: 30px;
+            }
+            
+            .container-opys p {
+                background-color: #ddd;
+                padding: 10px 15px;
+                border-radius: 25px;
+            }
+            
+            /* Порожня секція, яка займає весь екран */
+            .section-full-screen-empty {
+                height: 100vh;
+                background: linear-gradient(90deg, rgba(158,79,210,1) 12%, rgba(29,109,253,1) 62%, rgba(69,252,133,1) 100%);
+            }
+            
+            /* Основні стилі хедера */
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 30px;
+                background-color: #000;
+                color: #fff;
+            }
+            
+            .header .logo {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            
+            .nav-links {
+                display: flex;
+                gap: 30px;
+                align-items: center;
+            }
+            
+            .nav-links a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 16px;
+                padding: 10px;
+                border: 1px solid transparent;
+                border-radius: 20px;
+            }
+            
+            .nav-links a:hover {
+                color: #ddd;
+                border: 1px solid white;
+            }
+            
+            /* Випадаюче меню */
+            .dropdown-menu {
+                position: absolute;
+                top: 100%;
+                background-color: #fff;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                display: none;
+                text-align: center;
+            }
+            
+            .dropdown-menu a {
+                display: block;
+                padding: 10px;
+                color: #000;
+                text-decoration: none;
+                white-space: nowrap;
+            }
+            
+            .dropdown-menu a:hover {
+                background-color: #5f6066;
+            }
+            
+            .show {
+                display: block;
+            }
+            
+            /* Кнопки */
+            .buttons .btn {
+                padding: 8px 15px;
+                border: 2px solid #1e90ff;
+                border-radius: 25px;
+                color: #1e90ff;
+                background-color: transparent;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            
+            .buttons .btn:hover {
+                background-color: #1e90ff;
+                color: #fff;
+            }
+            
+            .buttons .btn-primary {
+                background-color: #1e90ff;
+                color: #fff;
+            }
+            
+            .buttons .btn-primary:hover {
+                background-color: #1576d2;
+            }
+            
+            /* Футер */
+            footer {
+                background-color: #000;
+                color: #fff;
+                padding: 40px 0;
+                border-top: 5px solid #fff;
+            }
+            
+            .footer-container {
+                display: flex;
+                justify-content: space-between;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            
+            .footer-logo img {
+                width: 400px;
+            }
+            
+            .foot-ul {
+                list-style: none;
+                display: flex;
+                gap: 15px;
+            }
+            
+            .foot-ul a {
+                color: rgb(156, 192, 192);
+                text-decoration: none;
+            }
+            
+            .hh {
+                font-family: 'Times New Roman', Times, serif;
+            }
+            
+            /* Адаптивні стилі */
+            @media (max-width: 1024px) {
+                .container-main &gt; h1 {
+                    font-size: 45px;
+                }
+            
+                #Info_button {
+                    padding: 10px 15px;
+                    font-size: 16px;
+                }
+            
+                .container-opys p {
+                    padding: 8px 12px;
+                }
+            
+                .header {
+                    padding: 15px;
+                }
+            
+                .nav-links {
+                    gap: 20px;
+                }
+            
+                .nav-links a {
+                    font-size: 14px;
+                }
+            
+                .buttons .btn {
+                    padding: 6px 12px;
+                    font-size: 14px;
+                }
+            
+                .footer-container {
+                    flex-direction: column;
+                    text-align: center;
+                }
+            
+                .footer-logo img {
+                    width: 300px;
+                }
+            
+                .foot-ul {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+            
+            @media (max-width: 768px) {
+                .header {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            
+                .nav-links {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            
+                .container-main &gt; h1 {
+                    font-size: 35px;
+                }
+            
+                #Info_button {
+                    padding: 8px 12px;
+                    font-size: 14px;
+                }
+            
+                .container-opys {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            
+                .buttons .btn {
+                    padding: 5px 10px;
+                    font-size: 12px;
+                }
+            
+                .footer-container {
+                    flex-direction: column;
+                    text-align: center;
+                }
+            
+                .footer-logo img {
+                    width: 250px;
+                }
+            
+                .foot-ul {
+                    flex-direction: column;
+                    gap: 5px;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .container-main &gt; h1 {
+                    font-size: 25px;
+                }
+            
+                #Info_button {
+                    padding: 6px 10px;
+                    font-size: 12px;
+                }
+            
+                .container-opys p {
+                    padding: 6px 10px;
+                }
+            
+                .header {
+                    flex-direction: column;
+                    gap: 8px;
+                    padding: 10px;
+                }
+            
+                .nav-links a {
+                    font-size: 12px;
+                }
+            
+                .buttons .btn {
+                    padding: 4px 8px;
+                    font-size: 10px;
+                }
+            
+                .footer-logo img {
+                    width: 200px;
+                }
+            
+                .foot-ul {
+                    gap: 3px;
+                }
+            }
+            </code>
+            </pre>
+            <h2>Пояснення</h2>
+            <p>Ці стилі застосовуються для пристроїв із шириною екрана понад 1024px, таких як десктопи та великі ноутбуки.
+                Основні аспекти:
+                
+                Великі розміри тексту (заголовок h1 → 60px), кнопок і контейнерів, щоб заповнити простір великого екрану.
+                Горизонтальне розташування елементів: головне меню, кнопки, секції футера вирівнюються горизонтально.
+                Широкі поля і відступи: навігаційні посилання, кнопки та елементи футера мають більше місця для візуального балансу.
+                Лого футера відображається у великому розмірі (400px) для акценту.</p>
+
+    </div>
+</body>
+</html>
